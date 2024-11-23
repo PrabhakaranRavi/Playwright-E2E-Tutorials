@@ -21,6 +21,7 @@ test("Page Playwright Test", async ({ page }) => {
 test("Entering wrong username and password", async ({ browser }) => {
     const context = await browser.newContext();
     const page = await context.newPage();
+    page.getAttribute()
     await page.goto("https://rahulshettyacademy.com/loginpagePractise/");
     console.log(await page.title())
 
@@ -40,3 +41,14 @@ test("Entering wrong username and password", async ({ browser }) => {
     console.log(await page.locator(`.card-body a`).nth(0).textContent())
     console.log(await page.locator(`.card-body a`).allTextContents())
 });
+
+const { test, expect } = require("@playwright/test")
+
+test("Hi", async ({browser}) => {
+    const context = await browser.newContext();
+    const page = await context.newPage();
+
+    await page.goto("")
+
+    console.log(page.title())
+})

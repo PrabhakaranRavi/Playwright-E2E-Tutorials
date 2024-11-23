@@ -14,6 +14,8 @@ test("Entering wrong username and password", async ({ page }) => {
     await page.locator(`#okayBtn`).click()
 
     console.log(await page.locator(`.radiotextsty`).last().isChecked())
+
+    I.assert(res, true, "Failed due to ")
     await expect(page.locator(`.radiotextsty`).last()).toBeChecked();
 
     await page.locator(`#terms`).click();

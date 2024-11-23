@@ -13,4 +13,5 @@ module.exports = defineConfig({
     browserName: 'chromium',
     headless: false
   },
+  testMatch: ['tests/CSSProperty.spec.js'],
 })
