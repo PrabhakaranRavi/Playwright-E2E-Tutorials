@@ -11,7 +11,9 @@ module.exports = defineConfig({
 
   use: {
     browserName: 'chromium',
-    headless: false
+    headless: false,
+    screenshot: "on",
+    trace: "retain-on-failure"
   },
   testMatch: ['tests/CSSProperty.spec.js'],
 })
