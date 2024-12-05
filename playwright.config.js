@@ -8,12 +8,13 @@ module.exports = defineConfig({
     timeout: 5000
   },
   reporter: 'html',
-
+  
   use: {
     browserName: 'chromium',
     headless: false,
     screenshot: "on",
     trace: "retain-on-failure"
   },
-  testMatch: ['tests/CSSProperty.spec.js'],
+  
+  testMatch: ['ClientAppLogin.spec.js'],
 })

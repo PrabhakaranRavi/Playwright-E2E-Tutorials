@@ -1,9 +1,13 @@
 const { test, expect } = require("@playwright/test");
 
-test("Pages switching_ Tab/Window", async ({ page }) => {
+
+
+test("Pages switching_ Tab/Window", async ({ browserName, page }) => {
     await page.goto("https://letcode.in/buttons");
     console.log(await page.title())
-
+    
+    console.log(`Browser Name: ${browserName}`);
+    
     //Example: Handle a New Tab or Window
     const [newPage] = await Promise.all([
         context.waitForEvent('page'), // Waits for the new page to open
