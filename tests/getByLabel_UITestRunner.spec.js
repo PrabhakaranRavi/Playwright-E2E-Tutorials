@@ -23,4 +23,10 @@ test("E2E Scenario_Order", async ({ page }) => {
 
     await page.getByRole("link", { name: "Shop" }).click();
     await page.locator(`app-card`).filter({ hasText: "Nokia Edge" }).getByRole(`button`).click();
+
+    /**
+    * 36. Understand when getByLabel can be used to enter into edit boxes
+    */
+
+
 });
