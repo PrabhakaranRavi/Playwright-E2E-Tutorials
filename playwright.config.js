@@ -16,5 +16,5 @@ module.exports = defineConfig({
     trace: "retain-on-failure"
   },
   
-  testMatch: ['ClientAppLogin.spec.js'],
+  testMatch: ['getByLabel_UITestRunner.spec.js'],
 })
