@@ -38,4 +38,5 @@ test('User should be able to log in successfully', async ({ page }) => {
     
     const dashboardTitle = page.locator('.dashboard-title');
     await expect(dashboardTitle).toContainText('Welcome, test_user');
+    await expect(dashboardTitle).toHaveText('Welcome, test_user');
 });

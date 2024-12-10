@@ -1,5 +1,4 @@
 const { test, expect } = require("@playwright/test");
-const exp = require("constants");
 
 test("E2E Scenario_Order", async ({ page }) => {
     await page.goto("https://rahulshettyacademy.com/client");
